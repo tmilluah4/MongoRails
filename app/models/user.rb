@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
+  include ActiveModel::SecurePassword
   field :provider, :type => String
   field :uid, :type => String
   field :name, :type => String
